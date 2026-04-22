@@ -13,7 +13,7 @@ Use this checklist to migrate content from your existing WordPress site into thi
 
 - WordPress Home hero -> `#home` section
 - WordPress About page -> `#about` section
-- WordPress Portfolio/Projects -> `#work` section
+- WordPress Portfolio/Projects -> `#projects` section
 - WordPress Contact -> `#contact` section
 
 ## 3) Replace Placeholder Content
