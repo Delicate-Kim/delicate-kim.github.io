@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soohwan Kim | Portfolio</title>
+    <meta
+      name="description"
+      content="Fluid simulation and biophysics researcher at Georgia Tech featuring current and past research projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">SOOHWAN KIM</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Georgia Tech Research Portfolio</p>
+            <h1>Fluid Simulation and Biophysics Researcher</h1>
+            <p class="lead">
+              Hello visitors! I am Soohwan Kim, a Ph.D. student in Mechanical Engineering at
+              Georgia Tech in Dr. David Hu's lab, with a concurrent Master in Computational Science
+              and Engineering.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">View Work</a>
+              <a
+                href="https://sites.gatech.edu/skim/files/2025/08/CV_2025_SoohwanKim.pdf"
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Quick profile">
+            <img
+              src="https://sites.gatech.edu/skim/files/2021/09/IMG_0951.jpg"
+              alt="Portrait of Soohwan Kim"
+              class="profile-image"
+            />
+            <h2>Quick Facts</h2>
+            <ul>
+              <li><strong>Affiliation:</strong> Georgia Tech, Mechanical Engineering</li>
+              <li><strong>Lab:</strong> Dr. David Hu's Lab</li>
+              <li><strong>Focus:</strong> Fluid simulation, biophysics, and robotics</li>
+              <li><strong>Location:</strong> Atlanta, Georgia</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I am from Jeju, Korea, where I grew up exploring mountain and coastal environments. I
+            later studied mechanical engineering at Seoul National University, where fluid
+            mechanics and robotics became my strongest interests.
+          </p>
+          <p>
+            I am currently based in Atlanta and continue research in fluid simulation and
+            biophysics. Outside the lab, I enjoy playing acoustic guitar as a way to reset and
+            stay creative.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="work">
+        <div class="container">
+          <div class="section-head">
+            <h2>Work</h2>
+            <div class="filters" aria-label="Project filters">
+              <button class="filter active" type="button" data-filter="all">All</button>
+              <button class="filter" type="button" data-filter="current">Current</button>
+              <button class="filter" type="button" data-filter="past">Past</button>
+              <button class="filter" type="button" data-filter="fluid">Fluid</button>
+              <button class="filter" type="button" data-filter="biophysics">Biophysics</button>
+              <button class="filter" type="button" data-filter="robotics">Robotics</button>
+            </div>
+          </div>
+
+          <div class="projects">
+            <article class="project-card" data-category="current fluid biophysics">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2025/02/image.png"
+                alt="Capillary flow simulation visual"
+              />
+              <h3>Capillary Flow Simulation with Phase-Field Lattice Boltzmann Solver</h3>
+              <p>
+                Improved a phase-field lattice Boltzmann model to better simulate multiphase
+                capillary flows with large density differences and complex geometries.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/current-projects/capillary-flow-simulation-with-phase-field-lattice-boltzmann-solver/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="current fluid">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2024/02/image-dde953f1e033df3d.png"
+                alt="Lid-driven cavity flow simulation"
+              />
+              <h3>Lid-Driven Flow in Polygonal Cavities using Lattice Boltzmann Method</h3>
+              <p>
+                Developed a MATLAB implementation of LBM to solve steady-state lid-driven cavity
+                flow problems relevant to coating, aerospace, and thermal systems.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/current-projects/lid-driven-flow-in-polygonal-cavities-using-lattice-boltzmann-method/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="current fluid">
+              <video
+                class="project-video"
+                controls
+                preload="metadata"
+                src="https://sites.gatech.edu/skim/files/2024/10/Ramblin-Wreck-Vortex-cut-X3.mp4"
+              >
+                Your browser does not support embedded videos.
+              </video>
+              <h3>Flow Visualization and Drag Calculation using GPU Computing</h3>
+              <p>
+                Simulated high Reynolds-number flow around the Ramblin' Wreck and mosquito-flight
+                cases using a GPU-accelerated LBM pipeline in real time.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/current-projects/flow-visualization-and-drag-calculation-using-gpu-computing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+                <a
+                  href="https://github.com/ProjectPhysX/FluidX3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >FluidX3D</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="current fluid biophysics">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2024/02/Basic_Principle-a096e4b5d7bc76c2-1024x576.jpg"
+                alt="Wetted wall cyclone schematic"
+              />
+              <h3>Wetted Wall Cyclone for Bioaerosol Collector</h3>
+              <p>
+                Investigating aerosol capture in a wetted-wall cyclone to concentrate harmful
+                particles for public health and biosurveillance applications.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/current-projects/wetted-wall-cyclone-for-bioaerosol-collector/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="past biophysics fluid">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2021/09/KakaoTalk_20210724_133405614-1024x1024.jpg"
+                alt="Kimchi fermentation in onggi vessel"
+              />
+              <h3>Kimchi Fermentation in Permeable Korean Earthenware Onggi</h3>
+              <p>
+                Studied how vessel permeability affects fermentation dynamics through time-lapse
+                imaging and carbon dioxide measurements in traditional onggi containers.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/past-projects/kimchi-fermentation-in-permeable-korean-earthenware-onggi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="past robotics">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2024/01/DYROS_summary-169534aa647e31df-1024x695.png"
+                alt="Human-robot hand mapping interface"
+              />
+              <h3>Human-Robot Hand Mapping Using a Glove-type Sensor</h3>
+              <p>
+                Built a joint-level mapping strategy that translates glove sensor inputs into
+                robotic hand motions for improved dexterous teleoperation.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/past-projects/human-robot-hand-mapping-using-a-glove-type-sensor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="past biophysics robotics">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2024/01/Indentation_summary-e09f189bb0119fe0-1024x952.png"
+                alt="Viscoelastic skin indentation simulation"
+              />
+              <h3>Indentation Simulation of a Skin-like Viscoelastic Material</h3>
+              <p>
+                Modeled skin as a generalized Maxwell material in ABAQUS and proposed a refined
+                Prony-series based method to evaluate viscoelastic behavior.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/past-projects/viscoelastic-modeling-of-human-skin-for-indentation-test/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+
+            <article class="project-card" data-category="past biophysics fluid">
+              <img
+                class="project-image"
+                src="https://sites.gatech.edu/skim/files/2024/01/GROMIT_summary-8bf68e3374488cc7-1024x962.png"
+                alt="Canine-inspired machine olfaction flow experiment"
+              />
+              <h3>Canine-inspired Unidirectional Flows for Machine Olfaction</h3>
+              <p>
+                Designed and tested dog-inspired airflow pathways to reduce memory effects in odor
+                sensing systems and improve scent-detection stability.
+              </p>
+              <p class="project-links">
+                <a
+                  href="https://sites.gatech.edu/skim/past-projects/canine-inspired-unidirectional-flows-for-improving-memory-effects-in-machine-olfaction/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Project Page</a
+                >
+              </p>
+            </article>
+          </div>
+
+          <div class="work-columns">
+            <div class="work-card">
+              <h3>Press Highlights</h3>
+              <ul class="press-list">
+                <li>
+                  <a
+                    href="https://www.washingtonpost.com/science/2023/04/07/kimchi-onggi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >The Washington Post (Apr 7, 2023)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.me.gatech.edu/news/want-better-kimchi-make-it-ancients-did"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Georgia Tech ME News (Apr 12, 2023)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://sites.gatech.edu/skim/files/2023/04/Apr-20-2023-Georgia-Tech-Weekly-Digest.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Georgia Tech Weekly Digest (Apr 20, 2023)</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="work-card">
+              <h3>Selected Gallery</h3>
+              <div class="gallery-grid">
+                <figure class="gallery-item">
+                  <img
+                    src="https://sites.gatech.edu/skim/files/2021/09/KakaoTalk_20210928_155543254-2.jpg"
+                    alt="Trip photo from Jeju"
+                  />
+                  <figcaption>The Last Trip to Jeju</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="https://sites.gatech.edu/skim/files/2021/09/my-chef.jpg"
+                    alt="Kimchi chef holding Schweinshaxe"
+                  />
+                  <figcaption>My Kimchi Chef holding Schweinshaxe</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="https://sites.gatech.edu/skim/files/2024/01/KakaoTalk_20240127_180505903-9858727e9c5f8aa0.jpg"
+                    alt="CFD internship in Boston"
+                  />
+                  <figcaption>CFD Internship at Dassault, Boston</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <p class="section-intro">
+            Professional research and technical capabilities presented in the same structure as the
+            original portfolio tabs.
+          </p>
+          <div class="services-grid">
+            <article>
+              <h3>Computational Fluid Dynamics</h3>
+              <p>
+                Lattice Boltzmann-based simulation workflows for multiphase flows, high Reynolds
+                number systems, and complex geometries.
+              </p>
+            </article>
+            <article>
+              <h3>Biophysics & Experimental Analysis</h3>
+              <p>
+                Data-driven research design combining experimental measurement with modeling for
+                bioaerosol, fermentation, and biological flow applications.
+              </p>
+            </article>
+            <article>
+              <h3>Robotics & System Modeling</h3>
+              <p>
+                Sensor-to-actuator mapping and mechanics-informed simulation for robotic
+                interaction and viscoelastic material studies.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Name:</strong> Soohwan Kim</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:ksh35000@gatech.edu">ksh35000@gatech.edu</a>
+        </p>
+        <p><strong>Phone:</strong> <a href="tel:+17706817572">(770) 681-7572</a></p>
+        <p>
+          <strong>Office:</strong> 018 Love Manufacturing Building, 771 Ferst Dr NW, Atlanta, GA
+          30313
+        </p>
+        <p>
+          <strong>Affiliation:</strong> The George W. Woodruff School of Mechanical Engineering,
+          Georgia Institute of Technology
+        </p>
+        <p class="copyright">Copyright <span id="year"></span> Soohwan Kim</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
