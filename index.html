@@ -104,12 +104,7 @@
                 capillary flows with large density differences and complex geometries.
               </p>
               <p class="project-links">
-                <a
-                  href="https://sites.gatech.edu/skim/current-projects/capillary-flow-simulation-with-phase-field-lattice-boltzmann-solver/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read Project Page</a
-                >
+                <a href="project-capillary-flow.html">Read Project Page</a>
               </p>
             </article>
 
@@ -125,12 +120,7 @@
                 flow problems relevant to coating, aerospace, and thermal systems.
               </p>
               <p class="project-links">
-                <a
-                  href="https://sites.gatech.edu/skim/current-projects/lid-driven-flow-in-polygonal-cavities-using-lattice-boltzmann-method/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read Project Page</a
-                >
+                <a href="project-lid-driven-flow.html">Read Project Page</a>
               </p>
             </article>
 
@@ -149,12 +139,7 @@
                 cases using a GPU-accelerated LBM pipeline in real time.
               </p>
               <p class="project-links">
-                <a
-                  href="https://sites.gatech.edu/skim/current-projects/flow-visualization-and-drag-calculation-using-gpu-computing/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read Project Page</a
-                >
+                <a href="project-gpu-flow-visualization.html">Read Project Page</a>
               </p>
             </article>
 
@@ -170,12 +155,7 @@
                 particles for public health and biosurveillance applications.
               </p>
               <p class="project-links">
-                <a
-                  href="https://sites.gatech.edu/skim/current-projects/wetted-wall-cyclone-for-bioaerosol-collector/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Read Project Page</a
-                >
+                <a href="project-wetted-wall-cyclone.html">Read Project Page</a>
               </p>
             </article>
           </div>
@@ -281,6 +261,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2021/09/KakaoTalk_20210928_155543254-2.jpg"
                 alt="Trip photo from Jeju"
+                data-lightbox="gallery"
               />
               <figcaption>The Last Trip to Jeju</figcaption>
             </figure>
@@ -288,6 +269,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2021/09/jeju-night-coast-3.jpg"
                 alt="Night coast in Jeju"
+                data-lightbox="gallery"
               />
               <figcaption>Jeju Night Coast</figcaption>
             </figure>
@@ -295,6 +277,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2021/09/my-chef.jpg"
                 alt="Kimchi chef holding Schweinshaxe"
+                data-lightbox="gallery"
               />
               <figcaption>My Kimchi Chef holding Schweinshaxe</figcaption>
             </figure>
@@ -302,6 +285,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2021/09/KakaoTalk_20210929_004539499.jpg"
                 alt="Graduation day photo"
+                data-lightbox="gallery"
               />
               <figcaption>Graduation Day</figcaption>
             </figure>
@@ -309,6 +293,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2021/09/david-hu.jpg"
                 alt="Soohwan Kim with Professor David Hu"
+                data-lightbox="gallery"
               />
               <figcaption>My Professor, Dr. David Hu</figcaption>
             </figure>
@@ -316,6 +301,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2024/01/KakaoTalk_20240127_180505903-9858727e9c5f8aa0.jpg"
                 alt="CFD internship in Boston"
+                data-lightbox="gallery"
               />
               <figcaption>CFD Internship at Dassault, Boston</figcaption>
             </figure>
@@ -323,6 +309,7 @@
               <img
                 src="https://sites.gatech.edu/skim/files/2024/01/KakaoTalk_20240125_110730910-bf3fcf312b114409.jpg"
                 alt="Family moment back in Korea"
+                data-lightbox="gallery"
               />
               <figcaption>Came Back to Korea and Became An Uncle</figcaption>
             </figure>
@@ -383,6 +370,12 @@
         <p class="copyright">Copyright <span id="year"></span> Soohwan Kim</p>
       </div>
     </footer>
+
+    <div class="lightbox" id="image-lightbox" aria-hidden="true" role="dialog" aria-label="Image zoom viewer">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+      <img class="lightbox-image" id="lightbox-image" alt="" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
 
     <script src="script.js"></script>
   </body>

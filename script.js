@@ -1,22 +1,54 @@
-const filterButtons = document.querySelectorAll(".filter");
-const projectCards = document.querySelectorAll(".project-card");
 const yearPlaceholder = document.getElementById("year");
+const lightbox = document.getElementById("image-lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxCaption = document.getElementById("lightbox-caption");
+const lightboxClose = document.getElementById("lightbox-close");
+const galleryImages = document.querySelectorAll('img[data-lightbox="gallery"]');
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const selectedCategory = button.dataset.filter;
+const closeLightbox = () => {
+  if (!lightbox || !lightboxImage) {
+    return;
+  }
 
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.src = "";
+  document.body.classList.remove("no-scroll");
+};
 
-    projectCards.forEach((card) => {
-      const categories = card.dataset.category.split(" ");
-      const shouldShow =
-        selectedCategory === "all" || categories.includes(selectedCategory);
+if (galleryImages.length && lightbox && lightboxImage && lightboxCaption) {
+  galleryImages.forEach((image) => {
+    image.addEventListener("click", () => {
+      const figure = image.closest("figure");
+      const captionNode = figure ? figure.querySelector("figcaption") : null;
+      const captionText = captionNode ? captionNode.textContent : image.alt || "";
 
-      card.style.display = shouldShow ? "flex" : "none";
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt || captionText;
+      lightboxCaption.textContent = captionText;
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("no-scroll");
     });
   });
+}
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox && lightbox.classList.contains("open")) {
+    closeLightbox();
+  }
 });
 
 if (yearPlaceholder) {
