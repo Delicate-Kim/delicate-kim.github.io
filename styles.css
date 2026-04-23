@@ -57,7 +57,7 @@ a {
 .brand {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #1d79df;
+  color: #e87b1f;
   letter-spacing: 0.04em;
 }
 
@@ -200,7 +200,8 @@ h1 {
 }
 
 .project-media {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border-radius: 10px;
@@ -281,6 +282,10 @@ h1 {
 .press-card .press-card-body a {
   color: var(--primary);
   font-weight: 600;
+}
+
+.press-card .press-card-body p {
+  margin: 0;
 }
 
 .gallery-grid {
@@ -405,7 +410,9 @@ h1 {
 
 .detail-content img,
 .detail-content video {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
   border-radius: 10px;
   border: 1px solid var(--border);
 }
@@ -422,7 +429,9 @@ h1 {
 .detail-media,
 .project-figure img,
 .detail-figure img {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
   border-radius: 10px;
   border: 1px solid var(--border);
 }
