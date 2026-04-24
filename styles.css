@@ -127,7 +127,7 @@ h1 {
 }
 
 .hero-title h1 {
-  font-size: clamp(1.65rem, 3.8vw, 2.85rem);
+  font-size: clamp(1.45rem, 3.3vw, 2.35rem);
   margin-bottom: 0;
 }
 
