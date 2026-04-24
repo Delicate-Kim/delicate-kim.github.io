@@ -111,6 +111,25 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.hero-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.hero-title-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(35, 99, 166, 0.2);
+}
+
+.hero-title h1 {
+  margin-bottom: 0;
+}
+
 .lead {
   margin: 0;
   color: var(--muted);
@@ -541,5 +560,10 @@ h1 {
   .site-nav {
     gap: 0.7rem;
     font-size: 0.95rem;
+  }
+
+  .hero-title-photo {
+    width: 56px;
+    height: 56px;
   }
 }
