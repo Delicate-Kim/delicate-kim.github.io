@@ -55,21 +55,10 @@ a {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
   font-size: 1.05rem;
   font-weight: 800;
   color: #1d79df;
   letter-spacing: 0.04em;
-}
-
-.brand::before {
-  content: "";
-  width: 1.2rem;
-  height: 1.2rem;
-  display: inline-block;
-  background: url("favicon-tangerine.svg") center / contain no-repeat;
 }
 
 .site-nav {
@@ -129,8 +118,8 @@ h1 {
 }
 
 .hero-title-photo {
-  width: 288px;
-  height: 288px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -138,6 +127,7 @@ h1 {
 }
 
 .hero-title h1 {
+  font-size: clamp(1.9rem, 4.6vw, 3.35rem);
   margin-bottom: 0;
 }
 
@@ -574,7 +564,7 @@ h1 {
   }
 
   .hero-title-photo {
-    width: 224px;
-    height: 224px;
+    width: 180px;
+    height: 180px;
   }
 }
