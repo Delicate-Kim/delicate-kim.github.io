@@ -445,6 +445,12 @@ h1 {
   color: var(--muted);
 }
 
+/* Project detail pages should use the full content box width. */
+.detail-content p,
+.detail-content li {
+  max-width: none;
+}
+
 .detail-content figure {
   margin: 1rem 0;
 }
@@ -465,6 +471,11 @@ h1 {
   background: #ffffff;
   box-shadow: var(--shadow);
   padding: 1.2rem;
+}
+
+.project-detail p,
+.project-detail li {
+  max-width: none;
 }
 
 .detail-media,
