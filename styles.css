@@ -432,41 +432,7 @@ h1 {
   max-width: 78ch;
 }
 
-.detail-content {
-  margin-top: 1.4rem;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: #ffffff;
-  box-shadow: var(--shadow);
-  padding: 1.2rem;
-}
-
-.detail-content p {
-  color: var(--muted);
-}
-
-/* Project detail pages should use the full content box width. */
-.detail-content p,
-.detail-content li {
-  max-width: none;
-}
-
-.detail-content figure {
-  margin: 1rem 0;
-}
-
-.detail-content img,
-.detail-content video {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
+.detail-content,
 .project-detail {
   margin-top: 1.4rem;
   width: 80%;
@@ -479,15 +445,31 @@ h1 {
   padding: 1.2rem;
 }
 
+.detail-content p,
+.project-detail p {
+  color: var(--muted);
+}
+
+/* Project detail pages should use the full content box width. */
+.detail-content p,
+.detail-content li,
 .project-detail p,
 .project-detail li {
   max-width: none;
 }
 
+.detail-content figure {
+  margin: 1rem 0;
+}
+
+.detail-content img,
+.detail-content video,
+.project-detail img,
+.project-detail video,
 .detail-media,
 .project-figure img,
 .detail-figure img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: block;
   border-radius: 10px;
